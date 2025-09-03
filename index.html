@@ -6,16 +6,16 @@
   <body>
     <a-scene>
       <!-- A box that animates its position with easeInQuad easing -->
-      <a-box position="-2 1 -5" color="#4CC3D9">
-        <a-animation
-          attribute="position"
-          from="-2 1 -5"
-          to="2 1 -5"
-          dur="3000"
-          easing="easeInQuad"
-          direction="alternate"
-          repeat="indefinite"
-        ></a-animation>
+      <a-box position="-2 1 -5" color="#4CC3D9"
+          animation="
+          property: position;
+          from: -2 1 -5;
+          to: 2 1 -5;
+          dur: 3000
+          easing: easeInQuad;
+          dir: alternate;
+          loop: indefinite;
+      "
       </a-box>
 
       <!-- A sphere that animates its rotation with easeInCubic easing -->
@@ -39,5 +39,6 @@
     </a-scene>
   </body>
 </html>
+
 
 
